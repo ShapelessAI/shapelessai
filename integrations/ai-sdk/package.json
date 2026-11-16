@@ -1,6 +1,6 @@
 {
   "name": "shapelessai-ai-sdk",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "ShapelessAI tools for the Vercel AI SDK: list connected social accounts, schedule or publish posts, read post status.",
   "license": "MIT",
   "author": "ShapelessAI <hello@shapelessai.com> (https://shapelessai.com)",
