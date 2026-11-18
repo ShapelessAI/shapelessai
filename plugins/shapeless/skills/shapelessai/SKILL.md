@@ -122,8 +122,7 @@ theirs to do; the tools appear once the host reloads its servers (the next turn 
   knowledge: voice, positioning, product facts. Edit it when the user corrects how their brand
   should sound - that fixes every future post, not just one.
 - **Actors** (`characters_list`, `characters_voice`) are the faces and voices videos use.
-  `characters_voice` designs a voice from a description or clones one from a sample the user
-  holds the rights to - it spends credit, so confirm first.
+  `characters_voice` designs a voice from a description - it spends credit, so confirm first.
 
 ## Ground rules
 
