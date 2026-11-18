@@ -10,7 +10,7 @@ publish it. Nothing goes out without your approval.
 - **Skills**: `shapelessai` (how to drive the account) and `get-started` (connect the first account
   and draft the first post in the same conversation).
 
-Posting spends no credits (Free: 10 posts a day, 125 credits a month); media and research tools
+Posting spends no credits (Free: 10 posts a day and 60 a month, 125 credits a month); media and research tools
 spend credits at the cost each tool states.
 Plans and credits: https://shapelessai.com/pricing. Docs: https://shapelessai.com/docs, or every
 page in one fetch at https://shapelessai.com/llms-full.txt.
