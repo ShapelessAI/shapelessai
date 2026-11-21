@@ -233,6 +233,12 @@ skill from this repo. Gemini CLI reads `gemini-extension.json` at the root:
 gemini extensions install https://github.com/ShapelessAI/shapelessai
 ```
 
+Kiro installs it as a power straight from this repo: Powers panel, **Add Custom Power**, **Import
+power from a repository URL**, then paste
+`https://github.com/ShapelessAI/shapelessai/tree/main/plugins/shapeless` and press **Install**
+([Kiro docs](https://kiro.dev/docs/powers/installation/)). Kiro manages the hosted MCP server inside the
+power, so nothing goes into `~/.kiro/settings/mcp.json`.
+
 ## Claude Code plugin
 
 This repo is also a plugin marketplace. The `shapeless` plugin wires up the hosted MCP server and
