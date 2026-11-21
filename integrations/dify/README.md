@@ -4,7 +4,7 @@ Schedule and publish social media posts from Dify workflows, chatflows and agent
 
 ## Setup
 
-1. Sign up at [shapelessai.com](https://shapelessai.com) (the Free plan includes 10 posts a day) and connect your social accounts in the Studio.
+1. Sign up at [shapelessai.com](https://shapelessai.com) (the Free plan includes 10 posts a day and 60 a month) and connect your social accounts in the Studio.
 2. Create an API key under [Settings, API keys](https://shapelessai.com/studio/api-keys). It starts with `slk_`.
 3. In Dify, install the ShapelessAI plugin, open Tools, ShapelessAI, Authorize, and paste the key. The key is checked with a read-only call to `GET /api/me`.
 
