@@ -12,14 +12,14 @@
   "repository": "https://github.com/ShapelessAI/shapelessai",
   "license": "MIT",
   "keywords": [
-    "shapeless",
-    "shapelessai",
     "social media",
-    "mcp",
-    "linkedin",
+    "social media scheduler",
+    "schedule posts",
+    "post to linkedin",
     "instagram",
     "tiktok",
-    "youtube"
+    "content calendar",
+    "ai video"
   ],
   "extensions": {
     "com.openai": {
