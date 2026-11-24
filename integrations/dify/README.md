@@ -1,6 +1,6 @@
 # ShapelessAI for Dify
 
-Schedule and publish social media posts from Dify workflows, chatflows and agents with [ShapelessAI](https://shapelessai.com), on the accounts you connected: LinkedIn (profiles and Pages), X, Instagram, TikTok, YouTube, Facebook, Threads and Bluesky.
+Schedule and publish social media posts from Dify workflows, chatflows and agents with [ShapelessAI](https://shapelessai.com), on the accounts you connected: LinkedIn (profiles and Pages), X, Instagram, TikTok, YouTube, Facebook, Threads, Bluesky, Mastodon, Discord, Slack, Lemmy, Nostr and Whop, and articles or newsletters on WordPress, DEV, Hashnode and Listmonk. The live list is always `GET https://shapelessai.com/api/platforms`.
 
 ## Setup
 
