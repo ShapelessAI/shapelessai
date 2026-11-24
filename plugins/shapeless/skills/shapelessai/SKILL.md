@@ -66,8 +66,10 @@ theirs to do; the tools appear once the host reloads its servers (the next turn 
   server holds the account's Brand Memory, connected platforms, and media pipeline.
 - **Media rides the message** as `mediaKeys`: anything already in the account (`assets_list`).
   Up to 6 per message. The agent reads them for real - an image's pixels, not just its filename.
-  The hosted server has no disk, so a local file goes in first with the CLI
-  (`shapeless assets upload ./file`) or `PUT /api/brain/assets/{filename}`, which returns the key.
+  The hosted server has no disk: a local video or audio file (up to 2GB) goes in with
+  `assets_upload_url`, which answers the exact `curl` to run, then `assets_upload_complete`, which
+  answers the key; an image or PDF goes in with the CLI (`shapeless assets upload ./file`) or
+  `PUT /api/brain/assets/{filename}`.
 - **Posts** are the queue: proposed -> scheduled -> published. `posts_list` / `posts_get` to
   review, `posts_approve` to accept a proposal into the schedule, `posts_dismiss` to reject,
   `posts_publish` to put one out now.
@@ -84,9 +86,19 @@ theirs to do; the tools appear once the host reloads its servers (the next turn 
     "mediaKeys": ["..."],             // media already in the account
     "title": "The video title",       // YouTube requires one
     "settings": { },                  // per platform; platforms_list has the schema
-    "firstComment": "Link: https://..."   // LinkedIn, X, Bluesky only
+    "firstComment": "Link: https://..."   // where platforms_list says firstComment.supported
   }
   ```
+
+  Optional too: `altText` per media key, `comments` (an ordered chain under the post, each with
+  text, media and a delay), `plugs` (comment or repost once it reaches N likes or M minutes, from
+  this or another account), `group` instead of `connectionId` (every account in a group), `tags`,
+  `signature`, `repeatEveryDays` and `shortenLinks`. `platforms_list` says which a platform takes.
+- **Around a post**: `posts_update` edits a queued one (text, time, first comment, tags, repeat),
+  `posts_share` answers a read-only preview link for someone with no account, `posts_setup` lists
+  the account's tags, signatures, groups and webhooks, and `tags_save`, `signatures_save`,
+  `groups_save` and `webhooks_save` create, edit or delete them. `reddit_flairs` reads a
+  subreddit's flairs and rules before a Reddit post.
 
   `scheduledAt` and `queue` are exclusive. A platform rule refuses at creation with a `422` that
   names the rule, never at publish time. The CLI equivalent is

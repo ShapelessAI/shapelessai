@@ -62,14 +62,22 @@ shapeless posts create --to <connectionId> --text "Shipping day."               
 shapeless posts create --to <connectionId> --text "..." --at 2026-09-21T09:00:00+03:00  # at a time
 shapeless posts create --to <connectionId> --text "..." --queue                         # next free slot
 shapeless posts create --to <connectionId> --text "..." --media k1,k2 \
-  --first-comment "Link: https://..."      # LinkedIn, X, Bluesky
+  --first-comment "Link: https://..."      # where platforms_list says firstComment.supported
 shapeless posts create --to <youtubeConnectionId> --text "..." --media <clip.mp4 key> \
   --title "The video title" --settings '{"privacyStatus":"unlisted"}'
 ```
 
-The MCP tool is `posts_create` with the same arguments: `connectionId`, `text`, `mediaKeys`,
-`title`, `scheduledAt` **or** `queue: true`, `settings`, `firstComment`. Read `platforms_list`
-first for the platform's limits and its `settingsSchema`.
+The MCP tool is `posts_create` with the same arguments: `connectionId` (or `group`, every account
+in a group), `text`, `mediaKeys`, `altText`, `title`, `scheduledAt` **or** `queue: true`,
+`settings`, `firstComment` or a whole `comments` chain, `plugs` (comment or repost once the post
+reaches N likes or M minutes), `tags`, `signature`, `repeatEveryDays` and `shortenLinks`. Read
+`platforms_list` first for the platform's limits, its `settingsSchema` and which of these it takes.
+
+Around the post: `posts_update` edits a queued one, `posts_share` makes a read-only preview link
+for someone without an account, `posts_setup` lists the account's tags, signatures, groups and
+webhooks, and `tags_save`, `signatures_save`, `groups_save` and `webhooks_save` manage them
+(a webhook gets a signed POST when a post is published or fails). `reddit_flairs` reads a
+subreddit's flairs and rules before a Reddit post.
 
 **Free plan**: ten posts a day and sixty a month on the rail, counted on the UTC day each post goes out on, so a
 week planned ahead is ten a day rather than ten in total. The eleventh answers
@@ -162,6 +170,10 @@ claude mcp add --transport http --scope user shapeless https://shapelessai.com/m
 codex mcp add shapeless --url https://shapelessai.com/mcp && codex mcp login shapeless
 gemini mcp add --transport http shapeless https://shapelessai.com/mcp
 ```
+
+The hosted server reads no disk, so a large local video or audio file (up to 2GB) goes up with
+`assets_upload_url` (it answers the exact `curl` that sends the file) and then
+`assets_upload_complete`, which answers the media key.
 
 The same tools (`posts_create`, `jobs_create`, `posts_approve`, `brain_write`, ...) also run locally:
 `shapeless mcp` speaks MCP on stdio with the API key from `shapeless login`, and adds the tools

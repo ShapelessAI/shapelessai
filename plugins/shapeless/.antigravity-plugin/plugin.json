@@ -2,7 +2,7 @@
   "$schema": "https://antigravity.google/schemas/v1/plugin.json",
   "name": "shapeless",
   "displayName": "ShapelessAI",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "An AI social media team: draft, design, render and publish posts to LinkedIn, X, Instagram, TikTok, YouTube and more, with your approval.",
   "logo": "assets/icon.png",
   "suggestedPrompts": [
