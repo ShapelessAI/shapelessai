@@ -5,7 +5,9 @@ research a topic, draft a post in your voice, render a carousel or a short video
 publish it. Nothing goes out without your approval.
 
 - **Networks**: LinkedIn (profile and page), X, Instagram, TikTok, YouTube, Facebook pages,
-  Threads, Bluesky, Mastodon and Discord.
+  Threads, Bluesky, Mastodon, Discord, Slack, Lemmy, Nostr and Whop, plus long-form on WordPress,
+  DEV, Hashnode and Listmonk. Telegram, Pinterest, Tumblr and Reddit are built and switch on when
+  their app approvals land; `platforms_list` is the live truth.
 - **MCP server**: `https://shapelessai.com/mcp`, sign in with OAuth in the browser, no API key.
 - **Skills**: `shapelessai` (how to drive the account) and `get-started` (connect the first account
   and draft the first post in the same conversation).
