@@ -10,7 +10,8 @@ them to a first post now, in this conversation.
 
 1. Call `me`, then `connections_list`.
 2. No account connected: ask which network they post on most (LinkedIn, X, Instagram, TikTok,
-   YouTube, Facebook, Threads, Bluesky). Hand them that network's `connect` link from the result
+   YouTube, Facebook, Threads, Bluesky, or one of the others `platforms_list` marks live, such as
+   Mastodon, Discord, Slack or a WordPress blog). Hand them that network's `connect` link from the result
    (or `connections_link`), never a settings or Accounts page, and wait until they say it is done.
 3. An account connected: name it and ask one question, what this week's post should be about (their
    product, a lesson, a launch). Offer an example if they hesitate.

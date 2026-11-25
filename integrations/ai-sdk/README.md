@@ -22,7 +22,7 @@ const { text } = await generateText({
 
 | tool | does |
 |---|---|
-| `listAccounts` | connected accounts (X, LinkedIn, Instagram, TikTok, YouTube, Threads, Bluesky, Facebook and more) with their `connectionId` |
+| `listAccounts` | connected accounts (X, LinkedIn, Instagram, TikTok, YouTube, Threads, Bluesky, Facebook, Mastodon, Discord, Slack, WordPress and more) with their `connectionId` |
 | `createPost` | a post on one account: next free queue slot by default, or `scheduledAt`, or `publishNow`. Asks for approval first (`needsApproval: true`); pass `{ needsApproval: false }` to turn that off |
 | `listPosts` | recent posts with status, time, live URL and any error |
 

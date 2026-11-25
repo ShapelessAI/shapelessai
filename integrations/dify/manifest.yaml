@@ -5,7 +5,7 @@ name: shapelessai
 label:
   en_US: ShapelessAI
 description:
-  en_US: Schedule and publish social media posts from Dify workflows and agents with ShapelessAI, on the accounts you connected (LinkedIn, X, Instagram, TikTok, YouTube, Facebook, Threads and Bluesky).
+  en_US: Schedule and publish social media posts from Dify workflows and agents with ShapelessAI, on the accounts you connected (LinkedIn, X, Instagram, TikTok, YouTube, Facebook, Threads, Bluesky, Mastodon, Discord, Slack, WordPress and more).
 icon: icon.png
 resource:
   memory: 268435456

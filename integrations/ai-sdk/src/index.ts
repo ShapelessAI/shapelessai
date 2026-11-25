@@ -74,7 +74,7 @@ export function listAccounts(opts: ShapelessAIOptions = {}) {
   const call = client(opts);
   return tool({
     description:
-      "List the social media accounts connected to ShapelessAI that can be posted to (X, LinkedIn, Instagram, TikTok, YouTube, Threads, Bluesky, Facebook and more). Call this first to get a connectionId.",
+      "List the social media accounts connected to ShapelessAI that can be posted to (X, LinkedIn, Instagram, TikTok, YouTube, Threads, Bluesky, Facebook, Mastodon, Discord, Slack, WordPress and more). Call this first to get a connectionId.",
     inputSchema: z.object({ platform: z.string().optional().describe('Only accounts on this platform, e.g. "linkedin".') }),
     execute: async ({ platform }) => {
       const { connections } = await call<{ connections: Connection[] }>("/api/connections");

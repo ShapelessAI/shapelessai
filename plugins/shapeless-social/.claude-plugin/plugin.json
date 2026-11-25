@@ -1,7 +1,7 @@
 {
   "name": "shapeless-social",
   "displayName": "ShapelessAI",
-  "description": "Drive a ShapelessAI account from Claude: write, schedule and publish posts to LinkedIn, X, Instagram, TikTok, YouTube, Facebook, Threads and Bluesky, run content jobs, keep Brand Memory, research trends and identities. The hosted MCP server (sign in with OAuth, no key) plus a get-started skill.",
+  "description": "Drive a ShapelessAI account from Claude: write, schedule and publish posts to LinkedIn, X, Instagram, TikTok, YouTube, Facebook, Threads, Bluesky, Mastodon, Discord, Slack, WordPress and more, run content jobs, keep Brand Memory, research trends and identities. The hosted MCP server (sign in with OAuth, no key) plus a get-started skill.",
   "version": "1.0.0",
   "author": {
     "name": "ShapelessAI",
