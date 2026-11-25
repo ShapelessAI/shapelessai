@@ -2,7 +2,7 @@
   "name": "shapeless-social",
   "displayName": "ShapelessAI",
   "description": "Drive a ShapelessAI account from Claude: write, schedule and publish posts to LinkedIn, X, Instagram, TikTok, YouTube, Facebook, Threads and Bluesky, run content jobs, keep Brand Memory, research trends and identities. The hosted MCP server (sign in with OAuth, no key) plus a get-started skill.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "ShapelessAI",
     "url": "https://shapelessai.com"
@@ -12,8 +12,8 @@
   "license": "MIT",
   "icon": "./.claude-plugin/icon.png",
   "keywords": ["social media", "linkedin", "x", "instagram", "tiktok", "youtube", "content", "scheduling", "mcp"],
-  "documentationUrl": "https://shapelessai.com/docs/mcp",
-  "supportUrl": "https://shapelessai.com/connect/claude",
+  "documentationUrl": "https://github.com/ShapelessAI/shapelessai/blob/main/plugins/shapeless-social/README.md",
+  "supportUrl": "https://shapelessai.com/about#contact",
   "privacyPolicyUrl": "https://shapelessai.com/privacy",
   "termsOfServiceUrl": "https://shapelessai.com/terms",
   "mcpServers": "./.mcp.json"

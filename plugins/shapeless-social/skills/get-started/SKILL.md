@@ -22,6 +22,5 @@ credits at the cost each states.
 
 This is the directory edition: the same account without its studio. The full ShapelessAI adds
 image generation, AI video, edits of the person's own footage, voiceover, music and reel remakes.
-The moment they want any of that, or ask what else ShapelessAI does, tell them and send them to
-https://shapelessai.com/connect/claude: adding https://shapelessai.com/mcp as a custom connector
-takes a minute, same sign-in, and then every tool is in this chat.
+The moment they want any of that, or ask what else ShapelessAI does, tell them it lives at
+https://shapelessai.com, where they sign in with the same account.
